@@ -5,24 +5,21 @@ const Schema = mongoose.Schema;
 const StudentSchema = new Schema({
     firstname: {
         type: String,
-        required: true,
+        
     },
     pname: {
         type: String,
-        required: true,
+        
     },
     contactnumber: {
         type: String,
-        required: true,
+        
     },
     email: {
         type: String,
-        required: true,
+        
     },
-    password: {
-        type: String,
-        required: true,
-    },
+   
     course: {
         type: String,
        
@@ -33,7 +30,7 @@ const StudentSchema = new Schema({
     },
     age: {
         type: String,
-        required: true,
+        
     },
     yclass: {
         type: String,
@@ -41,19 +38,19 @@ const StudentSchema = new Schema({
     },
     schoolcollegename: {
         type: String,
-        required: true,
+        
     },
     city: {
         type: String,
-        required: true,
+        
     },
     pincode: {
         type: String,
-        required: true,
+        
     },
     address: {
         type: String,
-        required: true,
+        
     },
 
 });

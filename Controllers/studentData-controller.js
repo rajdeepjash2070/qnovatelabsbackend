@@ -16,7 +16,7 @@ const getAllStudent = async (req, res, next) => {
 
 
 const addstudent = async (req, res, next) => {
-    const { firstname,pname,contactnumber,email,password,course,coursemode,age,yclass,schoolcollegename,city,pincode,address} = req.body;
+    const { firstname,pname,contactnumber,email,course,coursemode,age,yclass,schoolcollegename,city,pincode,address} = req.body;
     let students;
     try {
       students = new Student({
@@ -24,12 +24,11 @@ const addstudent = async (req, res, next) => {
         pname,
         contactnumber,
         email,
-    password,
     course,
     coursemode,
     age,
-    yclass
-    ,schoolcollegename,
+    yclass,
+    schoolcollegename,
     city,
     pincode,
     address,
